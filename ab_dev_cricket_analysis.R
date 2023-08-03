@@ -88,6 +88,5 @@ position_score<- dataset %>% select(Position,Score) %>% group_by(Position) %>% s
         ggplot(position_score,mapping=aes(x=Position,y=total_score_position,fill=Position))+geom_bar(stat = "identity")
 print(position_score)
 
-write.csv(dataset,"C:\\Users\\anujr\\OneDrive\\Documents\\data analyst\\ab_dev_analysis.csv")
-print("analysis is completed")
 write.csv(dataset,"C:\\Users\\anujr\\OneDrive\\Documents\\data analyst\\ab dev analysis\\dev.csv")
+print("analysis is completed")
