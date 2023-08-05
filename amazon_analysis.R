@@ -86,4 +86,5 @@ table(amazon_sale$ship_state)
 amazon_sale<-select(everything()) %>% toupper(ship_state)
 table(amazon_sale$ship_state)
 write.csv(amazon_sale,"C:\\Users\\anujr\\OneDrive\\Documents\\data analyst\\raw data\\amazon_sale_clean1.csv")
+print("data is cleaned")
 
